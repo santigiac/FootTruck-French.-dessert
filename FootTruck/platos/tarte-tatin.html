@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarte Tatin | Pâtisserie Sauvage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid"><a class="navbar-brand" href="../index.html" data-bs-toggle="tooltip"
+                title="Inicio"><i class="fas fa-birthday-cake brand-icon"></i>
+                <div>Pâtisserie Sauvage<span class="brand-sub">Haute Pâtisserie de Rue</span></div>
+            </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMain"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown"><i class="fas fa-snowflake me-1"></i> Fríos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mousse-limon.html"><i class="fas fa-lemon"></i> Mousse de
+                                    Limón</a></li>
+                            <li><a class="dropdown-item" href="panna-cotta-arandanos.html"><i class="fas fa-circle"></i>
+                                    Panna Cotta Arándanos</a></li>
+                            <li><a class="dropdown-item" href="tarta-cereza-fria.html"><i
+                                        class="fas fa-apple-whole"></i> Tarta Fría de Cereza</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown"><i class="fas fa-fire me-1"></i> Calientes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="fondant-chocolate.html"><i class="fas fa-mug-hot"></i>
+                                    Fondant de Chocolate</a></li>
+                            <li><a class="dropdown-item" href="crepe-suzette.html"><i
+                                        class="fas fa-fire-flame-curved"></i> Crêpe Suzette</a></li>
+                            <li><a class="dropdown-item" href="souffle-vainilla.html"><i class="fas fa-cloud"></i>
+                                    Soufflé de Vainilla</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#"
+                            data-bs-toggle="dropdown"><i class="fas fa-cookie-bite me-1"></i> Dulces</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="macaron-frutos-rojos.html"><i
+                                        class="fas fa-candy-cane"></i> Macaron Frutos Rojos</a></li>
+                            <li><a class="dropdown-item" href="eclair-cacao.html"><i class="fas fa-drumstick-bite"></i>
+                                    Éclair de Cacao</a></li>
+                            <li><a class="dropdown-item" href="tarte-tatin.html"><i class="fas fa-pie-chart"></i> Tarte
+                                    Tatin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown"><i class="fas fa-champagne-glasses me-1"></i> Bebidas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chocolat-chaud.html"><i class="fas fa-mug-saucer"></i>
+                                    Chocolat Chaud</a></li>
+                            <li><a class="dropdown-item" href="cidre-normand.html"><i class="fas fa-wine-glass"></i>
+                                    Cidre Normand</a></li>
+                            <li><a class="dropdown-item" href="limonade-lavande.html"><i class="fas fa-glass-water"></i>
+                                    Limonade à la Lavande</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../quienes-somos.html"><i
+                                class="fas fa-users me-1"></i> Quiénes Somos</a></li>
+                </ul><span class="navbar-text me-3" id="welcomeMsg"></span>
+                <div class="d-flex gap-2"><button class="btn btn-login" id="btnLogin" data-bs-toggle="modal"
+                        data-bs-target="#loginModal"><i class="fas fa-sign-in-alt me-1"></i> Login</button><button
+                        class="btn btn-logout" id="btnLogout" style="display:none;"><i
+                            class="fas fa-sign-out-alt me-1"></i> Logout</button></div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" style="margin-left:auto;margin-right:2rem;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-user-circle me-2"></i>Acceso Privado</h5><button
+                        type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3"><label for="inputUser" class="form-label">Usuario</label><input type="text"
+                                class="form-control" id="inputUser" required></div>
+                        <div class="mb-3"><label for="inputPassword" class="form-label">Contraseña</label><input
+                                type="password" class="form-control" id="inputPassword" required></div>
+                    </form>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-dark-outline" data-bs-dismiss="modal"><i
+                            class="fas fa-times me-1"></i> Cancelar</button><button type="button" class="btn btn-gold"
+                        id="btnSubmitLogin"><i class="fas fa-paper-plane me-1"></i> Enviar</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#">Dulces</a></li>
+                    <li class="breadcrumb-item active">Tarte Tatin</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <section class="dish-page">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1562007908-17c67e878c88?w=800&h=600&fit=crop" alt="Tarte Tatin"
+                class="dish-img">
+            <h1 class="dish-title">Tarte Tatin</h1>
+            <p class="dish-category"><i class="fas fa-cookie-bite me-2"></i>Dulce · Clásico de la Sologne</p>
+            <div class="dish-info">
+                <p>La <strong>Tarte Tatin</strong> nació de un feliz accidente en el Hôtel Tatin de Lamotte-Beuvron.
+                    Nuestra versión mantiene la autenticidad del original: manzanas Reinette caramelizadas en
+                    mantequilla y azúcar dorado, cubiertas por una masa brisée finísima y crujiente.</p>
+                <p>Servida tibia, invertida al momento en nuestra furgoneta, con un quenelle de crème fraîche épaisse y
+                    un hilo de caramelo de mantequilla salada. Es la esencia misma de la campiña francesa llevada a la
+                    calle con toda la elegancia que merece.</p>
+                <h4><i class="fas fa-list me-2"></i>Ingredientes</h4>
+                <p>Manzanas Reinette du Canada, mantequilla de Isigny AOP, azúcar de caña dorado, masa brisée artesanal
+                    (harina T55, mantequilla, sal de Guérande), crème fraîche épaisse, vainilla Bourbon.</p>
+                <h4><i class="fas fa-globe me-2"></i>Origen</h4>
+                <p>Lamotte-Beuvron, Sologne, Francia, circa 1880. Las hermanas Tatin crearon por accidente este postre
+                    invertido que se ha convertido en emblema de la pâtisserie francesa.</p>
+            </div>
+            <div class="dish-meta">
+                <div class="dish-meta-item"><i class="fas fa-euro-sign"></i><span class="meta-label">Precio</span><span
+                        class="meta-value">€8.20</span></div>
+                <div class="dish-meta-item"><i class="fas fa-star"></i><span class="meta-label">Valoración</span><span
+                        class="meta-value">4.8/5</span></div>
+                <div class="dish-meta-item"><i class="fas fa-utensils"></i><span class="meta-label">Tipo</span><span
+                        class="meta-value">Dulce</span></div>
+                <div class="dish-meta-item"><i class="fas fa-flag"></i><span class="meta-label">País</span><span
+                        class="meta-value">Francia</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagination-section">
+        <div class="container">
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="eclair-cacao.html"><i
+                                class="fas fa-chevron-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="../index.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="macaron-frutos-rojos.html">8</a></li>
+                    <li class="page-item"><a class="page-link" href="eclair-cacao.html">9</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">10</a></li>
+                    <li class="page-item"><a class="page-link" href="chocolat-chaud.html">11</a></li>
+                    <li class="page-item"><a class="page-link" href="cidre-normand.html">12</a></li>
+                    <li class="page-item"><a class="page-link" href="chocolat-chaud.html"><i
+                                class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container my-3">
+        <div class="alert alert-warning cookie-alert alert-dismissible fade show d-flex align-items-center"
+            role="alert"><i class="fas fa-cookie-bite me-3 fa-lg"></i>
+            <div><strong>Avis sur les Cookies:</strong> Este sitio utiliza cookies.</div><button type="button"
+                class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand"><i class="fas fa-birthday-cake me-2"></i>Pâtisserie Sauvage<span
+                            class="brand-sub">Haute Pâtisserie de Rue</span></div>
+                    <p class="footer-text mt-3">Postres franceses de alta cocina desde nuestra furgoneta.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 style="color:var(--color-gold);font-family:var(--font-heading);">Contacto</h5>
+                    <p class="footer-text"><i class="fas fa-map-marker-alt me-2"
+                            style="color:var(--color-gold);"></i>Rambla de Catalunya, Barcelona<br><i
+                            class="fas fa-phone me-2" style="color:var(--color-gold);"></i>+34 612 345 678</p>
+                </div>
+                <div class="col-lg-4 mb-4 text-center">
+                    <h5 style="color:var(--color-gold);font-family:var(--font-heading);">Síguenos</h5>
+                    <div class="social-icons mt-3"><a href="#" class="social-icon" data-bs-toggle="tooltip"
+                            title="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon"
+                            data-bs-toggle="tooltip" title="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#"
+                            class="social-icon" data-bs-toggle="tooltip" title="TikTok"><i
+                                class="fab fa-tiktok"></i></a><a href="#" class="social-icon" data-bs-toggle="tooltip"
+                            title="X"><i class="fab fa-x-twitter"></i></a><a href="#" class="social-icon"
+                            data-bs-toggle="tooltip" title="YouTube"><i class="fab fa-youtube"></i></a></div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Pâtisserie Sauvage. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

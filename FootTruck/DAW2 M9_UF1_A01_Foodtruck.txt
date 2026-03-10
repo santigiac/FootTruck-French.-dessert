@@ -1,0 +1,99 @@
+
+FAMLIA PROFESSIONAL: Informtica
+CICLE FORMATIU (Desenvolupament dAplicacions Web)
+
+Mdul 9 Disseny dinterfcies
+
+A01  Food-truck. Bootstrap components i layout
+Objectiu 
+Treballar els components de Bootstrap 5 per donar forma grfica a una web.
+A ms treballarem amb una altra llibreria dinternet, FontAwesome, que ens permet afegir icones i fonts especials a les webs.
+Temporitzaci
+6 hores
+Organitzaci de lespai
+Metodologia:  explicaci del funcionament del layout i dels components de Bootstrap i com utilitzar la documentaci per ampliar coneixements.
+Agrupaci d'alumnes: individual
+Descripci de l'activitat
+Crear un lloc web per publicitar la vostra furgoneta de menjar rpid (food truck).
+El lloc tindr una pgina index.html i els fulls destils que creieu convenients. Cal afegir el link per poder utilitzar classes de Bootstrap 5 i els scripts perqu funcionin els components amb JS.
+En aquesta pgina index.html tindrem 3 zones diferenciades:
+- Header (encapalat de la pgina)
+- Body (cos de la pgina)
+- Footer (peu de la p�gina)
+
+En el header tindrem una Navbar de Bootstrap amb:
+o logo de lloc web (navbrand),
+o Nav on es pugui triar el tipus de menjar (fred, calent, dolos, begudes) en un daquests formats : 
+? dropdown
+? pills
+? tab
+o text de ttol del lloc web,
+o un men que ens portar a la pgina de Qui som
+o 2 bot/icona de Login i Logout
+
+Cada opci del men tindr un submen amb cada un dels menjars del tipus corresponent:
+Freds                                  Calents                         Dolos                            Begudes 
+
+entrepd de ibric                Burger                     Gelat Magnum                Coca Cola
+entrep formatge               Frankfurt                 Crppe xocolata              Cervesa
+    .                                          .                                .                                         .
+Quan cliquem en el bot/icona de login apareixer una finestra modal, a la dreta de la pantalla i sota el navbar. En aquest modal cal que aparegui un formulari (form) amb un input per al nom dusuari i un input per el password. Tamb hi haur 2 botons (Enviar i Cancelar). Si cliquem a Enviar cal que en la navbar aparegui el text Benvingut  . on els  es substitueixin per el text de linput nom. Si cliquem en Cancelar es tancar el modal.
+
+En el body de la pgina posarem un carrusel de 4 imatges relacionades amb el que ofereix la web.
+
+Just a sota el carrusel cal posar un breadcrumb (molles de pa) que ens indica en quina p�gina som en cada moment.
+
+l a sota del breadcrumb, cal posar 4 Cards (mirar mockup figura 1) amb una imatge i una breu descripci� d�un producte que voleu destacar (per exemple: entrepans de promoci�, novetats, etc.) aix� com una icona de valoraci� positiva en verd (ex. m� amb polze aixecat) i una icona de valoraci� negativa en vermell (ex. m� amb polze cap avall). 
+
+Despr�s dels Card, cal posar la paginaci� (pagination). Aquesta ens ha de permetre anar a cada una de les p�gines htm dels diferents menjars.
+
+Sobre el footer cal que aparegui un missatge (Alert) que indiqui que el lloc web guarda dades a les cookies. Aquest missatge ha de tenir el text i una creu per tancar l�alerta.
+
+En el footer posarem icones de xarxes socials on promocionem la nostra food-truck.
+
+A ms de la pgina index.html, trindrem 12 pgines html (3 de cada tipus) amb un plat o beguda. En cada una daquestes pgines hi haur una imatge del 40% del total de la pgina (aprox.) i un text explicant el que vulgueu del plat (ingredients, preu, tipus de cuina, pas, etc.). Podeu afegir icones que creieu que poden ser adequades: preu, valoraci, etc.
+
+
+Finalment caldr fer una pgina html que expliqui Qui som, com hem creat lempresa, on ens ubiquem normalment, com contactar,... Trieu el contingut que creieu ms adequat per a  Qui som. 
+Figura 1
+
+Funcionalitat:
+- Quan cliquem em una opci del nav es visualitzar el seu submen.
+- Quan cliquem en un submen, anirem a la pgina html corresponent. Aquesta ha de mantenir el navbar igual que l'ndex.
+- Per tant el header i el footer estaran sempre visibles en totes les pgines.
+Cal que el breadcrumb sactualitzi convenientment i la pagination tamb. Ambds components seran funcionals en tot moment. 
+                            
+La resta de la web ha de ser homognia als canvis realitzats en lndex.html
+Cada element clickable de la web (bot, men, card,...) ha de tenir el seu tooltip indicant per a qu serveix.
+
+Recursos 
+? Visual Studio Code
+? Manuals de HTML i CSS de Internet
+? Bootstrap 5
+Rol de lequip docent
+Atendre els dubtes que tenen els alumnes quan fan les activitats.
+
+
+Avaluaci de l'activitat
+? Navbar funcional (logo, men, text, 2 botons).	3pts     
+? Modal+Form	1p
+? Interacci modal i navbar	1pt
+? Carrusel	1pt
+? Cards+icones+text	1p
+? 12 pgines plats	1pt
+? breadcrumbs, paginaci,alert	1pt
+? tooltips	0,5pt
+? Icones footer	0,5pt
+
+
+2
+
+				
+
+
+
+CFGS DAW
+                                                              Jesutes Bellvitge - Joan XXIII
+
+1
+
